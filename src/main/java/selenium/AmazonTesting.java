@@ -44,7 +44,7 @@ public class AmazonTesting {
 
 	public void loadBorwser() throws InterruptedException {
 		System.out.println("welcome to First Program");
-		System.setProperty("weldriver.chrome.driver", pr.getProperty("chromdriverpath"));
+		System.setProperty("weldriver.chrome.driver", System.getProperty("user.dir") + pr.getProperty("chromedriverpath"));
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
